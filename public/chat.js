@@ -21,6 +21,7 @@ btn.addEventListener('click', function()
       message: message.value,
       handle: handle.value
     });
+    message.value = '';
   }
 });
 
@@ -36,6 +37,7 @@ document.addEventListener('keypress', function(keypressed)
       message: message.value,
       handle: handle.value
     });
+    message.value = '';
   }
 });
 
@@ -53,7 +55,6 @@ socket.on('chat', function(data)
 {
   feedback.innerHTML = "";
   output.innerHTML += '<p><strong>' + data.handle + ':</strong> ' + data.message + '</p>';
-  message.value = '';
 })
 
 socket.on('typing', function(data)
