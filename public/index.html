@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Just Chatting</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Belleza&family=Montserrat:wght@100&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="/images/logo.png">
+    <link rel="stylesheet" href="/style.css">
+    <script type="text/javascript" src="chat.js" defer></script>
+  </head>
+  <body>
+    <div class="box">
+      <h1>Just Chatting!</h1>
+    </div>
+    <div class="txt">
+      <h3>Ingresa tu nombre, escribe un mensaje y comienza a hablar con tus nuevos amigos. ¡ Conecta en <em>Just Chatting</em> !</h3>
+    </div>
+
+    <div id="chat">
+      <div id="chat-window">
+        <div id="output"></div>
+        <div id="feedback"></div>
+      </div>
+      <input id="handle" type="text" placeholder="Usuario">
+      <input id="message" type="text" placeholder="Escribe un mensaje">
+      <button id="send" type="button">Enviar</button>
+    </div>
+  </body>
+</html>
