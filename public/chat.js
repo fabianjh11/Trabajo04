@@ -1,6 +1,6 @@
 //Connection
 
-var socket = io.connect('http://localhost');
+var socket = io.connect('https://fabian-jimenez.onrender.com/');
 
 const handle = document.getElementById('handle');
 const message = document.getElementById('message');
